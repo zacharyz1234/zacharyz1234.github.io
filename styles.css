@@ -1,0 +1,26 @@
+:root
+{
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2a2a2a;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --accent: #0a5c52;
+    --accent-hover: #0d7a6d;
+}
+
+body
+{
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+nav a
+{
+    border: 2px solid var(--accent);
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-primary);
+}
