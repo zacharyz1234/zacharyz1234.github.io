@@ -1,3 +1,10 @@
+main
+{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
 :root
 {
     --bg-primary: #1a1a1a;
@@ -16,6 +23,13 @@ body
     margin: 0;
 }
 
+nav
+{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 nav a
 {
     border: 2px solid var(--accent);
@@ -23,4 +37,29 @@ nav a
     border-radius: 12px;
     text-decoration: none;
     color: var(--text-primary);
+    margin-right: 10px;
+    display: inline-block;
+}
+
+nav a:hover
+{
+    border-color: var(--accent-hover);
+    background-color: var(--accent);
+}
+
+section
+{
+    border-bottom: 1px solid var(--accent);
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+section:last-child
+{
+    border-bottom: none;
+}
+
+section h2
+{
+    text-align: center;
 }
