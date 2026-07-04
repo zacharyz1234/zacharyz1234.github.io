@@ -2,7 +2,7 @@ main
 {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px 20px;
 }
 
 :root
@@ -26,22 +26,28 @@ body
 nav
 {
     max-width: 900px;
-    margin: 20 auto;
+    margin: 0px auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
 }
 
-nav a
+nav a, nav button
 {
     border: 2px solid var(--accent);
     padding: 12px 24px;
     border-radius: 12px;
     text-decoration: none;
     color: var(--text-primary);
-    margin-right: 10px;
     display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--bg-primary);
 }
 
-nav a:hover
+nav a:hover, nav button:hover
 {
     border-color: var(--accent-hover);
     background-color: var(--accent);
@@ -56,4 +62,24 @@ main h1
 main p
 {
     text-align: center;
+}
+
+#content-wrapper
+{
+    border-top: 2px solid var(--accent);
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: padding 0.3s ease;
+}
+
+#content-wrapper.expanded
+{
+    border-bottom: 2px solid var(--accent);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.hidden
+{
+    display: none;
 }
