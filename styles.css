@@ -7,7 +7,7 @@ main
 
 :root
 {
-    --bg-primary: #1a1a1a;
+    --bg-primary: #132522;
     --bg-secondary: #2a2a2a;
     --text-primary: #ffffff;
     --text-secondary: #b0b0b0;
@@ -26,7 +26,7 @@ body
 nav
 {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 20 auto;
     padding: 20px;
 }
 
@@ -47,19 +47,13 @@ nav a:hover
     background-color: var(--accent);
 }
 
-section
+main h1
 {
-    border-bottom: 1px solid var(--accent);
-    padding: 20px 0;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size: 48px;
 }
 
-section:last-child
-{
-    border-bottom: none;
-}
-
-section h2
+main p
 {
     text-align: center;
 }
